@@ -1,0 +1,1042 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+
+/* =========================
+   VARIABLES
+========================= */
+
+:root {
+    --gold: #dca52f;
+    --gold2: #f4c85c;
+    --cream: #fff8df;
+    --black: #050505;
+    --muted: #bdb7aa;
+}
+
+
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #050505;
+    color: #fff;
+    font-family: Montserrat, Arial, sans-serif;
+}
+
+
+/* Fondo */
+
+body:before {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    z-index: -2;
+
+    background:
+        radial-gradient(
+            circle at 20% 0%,
+            #2b210e 0,
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 90% 80%,
+            #2b210e 0,
+            transparent 30%
+        ),
+
+        #050505;
+}
+
+
+body:after {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    z-index: -1;
+
+    opacity: .10;
+
+    background-image:
+        linear-gradient(
+            135deg,
+            transparent 0 46%,
+            #dca52f 46.5% 48%,
+            transparent 48.5% 100%
+        );
+
+    background-size: 520px 520px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    background: rgba(5, 5, 5, .90);
+
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid #5f4517;
+}
+
+
+nav {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 12px 20px;
+}
+
+
+.brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+
+    color: #fff;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.brand img {
+    width: 52px;
+
+    height: 52px;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+}
+
+
+nav .links {
+    display: flex;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+    justify-content: flex-end;
+}
+
+
+nav a {
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+nav a:hover {
+    color: var(--gold2);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 88vh;
+
+    display: grid;
+
+    place-items: center;
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.hero-inner {
+    max-width: 850px;
+}
+
+
+.logo {
+    width: min(330px, 75vw);
+
+    filter:
+        drop-shadow(
+            0 0 18px
+            rgba(220, 165, 47, .22)
+        );
+}
+
+
+.kicker {
+    color: var(--gold2);
+
+    font-weight: 700;
+
+    letter-spacing: 5px;
+
+    font-size: 13px;
+
+    margin: 18px 0;
+}
+
+
+.hero h1 {
+    font-family: "Bebas Neue", Impact, sans-serif;
+
+    font-size: clamp(54px, 10vw, 110px);
+
+    line-height: .9;
+
+    margin: 0;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+}
+
+
+.hero p {
+    color: #d2cdc1;
+
+    max-width: 600px;
+
+    margin: 22px auto;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    border: 1px solid var(--gold);
+
+    color: #080808;
+
+    background: var(--gold2);
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    border-radius: 2px;
+
+    box-shadow:
+        0 0 20px
+        rgba(220, 165, 47, .18);
+
+    transition: .25s;
+}
+
+
+.btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 28px
+        rgba(220, 165, 47, .35);
+}
+
+
+.btn.alt {
+    background: transparent;
+
+    color: #fff;
+
+    margin-left: 8px;
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+section {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 78px 20px;
+}
+
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 42px;
+}
+
+
+.section-title .small {
+    color: var(--gold2);
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+}
+
+
+.section-title h2 {
+    font-family: "Bebas Neue", Impact, sans-serif;
+
+    font-size: 58px;
+
+    letter-spacing: 2px;
+
+    margin: 7px 0;
+}
+
+
+.section-title p {
+    color: var(--muted);
+
+    max-width: 650px;
+
+    margin: auto;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CARTA
+========================= */
+
+.grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+
+.card {
+    display: block;
+
+    position: relative;
+
+    padding: 22px;
+
+    border: 1px solid #4e3a18;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.04),
+            rgba(220,165,47,.025)
+        );
+
+    color: #fff;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+
+.card:hover {
+    border-color: var(--gold);
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 20px
+        rgba(220,165,47,.10);
+}
+
+
+.card h3 {
+    font-size: 17px;
+
+    letter-spacing: 2px;
+
+    margin: 0 70px 7px 0;
+
+    text-transform: uppercase;
+}
+
+
+.card p {
+    color: #a9a39a;
+
+    font-size: 12px;
+
+    line-height: 1.55;
+
+    margin: 0 70px 0 0;
+}
+
+
+.price {
+    position: absolute;
+
+    right: 20px;
+
+    top: 21px;
+
+    color: var(--gold2);
+
+    font-weight: 800;
+}
+
+
+.category {
+    color: var(--gold2);
+
+    letter-spacing: 4px;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    margin: 38px 0 14px;
+}
+
+
+/* =========================
+   PROMOS
+========================= */
+
+.promos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+
+.promo {
+    padding: 30px;
+
+    border: 1px solid var(--gold);
+
+    background: #090806;
+
+    box-shadow:
+        0 0 24px
+        rgba(220,165,47,.08);
+
+    transition: .25s;
+}
+
+
+.promo:hover {
+    transform: translateY(-3px);
+}
+
+
+.promo strong {
+    display: block;
+
+    font-family: "Bebas Neue";
+
+    font-size: 38px;
+
+    letter-spacing: 2px;
+
+    color: #fff;
+}
+
+
+.promo span {
+    display: block;
+
+    color: var(--gold2);
+
+    font-weight: 800;
+
+    font-size: 18px;
+
+    margin-top: 8px;
+}
+
+
+/* =========================
+   GALERÍA
+========================= */
+
+.gallery {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+}
+
+
+.photo {
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
+
+    border: 1px solid #4e3a18;
+
+    background: #111;
+
+    position: relative;
+
+    display: block;
+
+    cursor: pointer;
+
+    text-decoration: none;
+}
+
+
+.photo img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: .35s;
+}
+
+
+.photo:hover {
+    border-color: var(--gold);
+}
+
+
+.photo:hover img {
+    transform: scale(1.06);
+}
+
+
+/* =========================
+   VISOR DE IMÁGENES
+   GALERÍA
+========================= */
+
+.lightbox {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 25px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+        opacity .3s ease,
+        visibility .3s ease;
+}
+
+
+.lightbox:target {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+/* Fondo clickeable */
+
+.lightbox-background {
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, .94);
+}
+
+
+/* Contenido */
+
+.lightbox-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 90vw;
+
+    max-height: 90vh;
+}
+
+
+.lightbox-content img {
+    display: block;
+
+    max-width: 90vw;
+
+    max-height: 85vh;
+
+    width: auto;
+
+    height: auto;
+
+    object-fit: contain;
+
+    border: 1px solid var(--gold);
+
+    box-shadow:
+        0 0 40px
+        rgba(220, 165, 47, .25);
+}
+
+
+/* =========================
+   VISOR DE TRAGOS
+========================= */
+
+.drink-lightbox {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 25px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+        opacity .3s ease,
+        visibility .3s ease;
+}
+
+
+.drink-lightbox:target {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+/* Fondo negro */
+
+.drink-lightbox .lightbox-background {
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, .94);
+}
+
+
+/* Contenedor */
+
+.drink-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 90vw;
+
+    max-height: 90vh;
+}
+
+
+/* Imagen del trago */
+
+.drink-content img {
+    display: block;
+
+    max-width: 90vw;
+
+    max-height: 85vh;
+
+    width: auto;
+
+    height: auto;
+
+    object-fit: contain;
+
+    border: 1px solid var(--gold);
+
+    box-shadow:
+        0 0 40px
+        rgba(220, 165, 47, .25);
+}
+
+
+/* =========================
+   BOTÓN X
+========================= */
+
+.close {
+    position: absolute;
+
+    top: -45px;
+
+    right: 0;
+
+    z-index: 5;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 30px;
+
+    line-height: 1;
+
+    transition: .2s;
+}
+
+
+.close:hover {
+    color: var(--gold2);
+
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+.instagram-link {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.instagram-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+.contact {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 20px;
+}
+
+
+.contact-box {
+    border: 1px solid #4e3a18;
+
+    padding: 28px;
+}
+
+
+.contact-box h3 {
+    font-family: "Bebas Neue";
+
+    font-size: 32px;
+
+    margin: 0 0 12px;
+
+    color: var(--gold2);
+}
+
+
+.contact-box p {
+    color: #c8c2b8;
+
+    line-height: 1.8;
+
+    margin: 0;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    border-top: 1px solid #4e3a18;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    color: #8e887d;
+
+    font-size: 12px;
+}
+
+
+footer b {
+    color: var(--gold2);
+}
+/* =========================
+   NAVEGACIÓN DE GALERÍA
+========================= */
+
+.lightbox-content {
+    position: relative;
+}
+
+/* Botones anterior y siguiente */
+
+.gallery-prev,
+.gallery-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+
+    font-size: 40px;
+    line-height: 40px;
+
+    cursor: pointer;
+
+    z-index: 20;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.2s ease;
+}
+
+.gallery-prev:hover,
+.gallery-next:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: translateY(-50%) scale(1.08);
+}
+
+.gallery-prev {
+    left: 15px;
+}
+
+.gallery-next {
+    right: 15px;
+}
+
+
+/* =========================
+   IMAGEN DEL VISOR
+========================= */
+
+.lightbox-content img {
+    max-width: 90vw;
+    max-height: 85vh;
+
+    object-fit: contain;
+
+    user-select: none;
+    -webkit-user-drag: none;
+
+    touch-action: pan-y;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 768px) {
+
+    .gallery-prev,
+    .gallery-next {
+        width: 42px;
+        height: 42px;
+
+        font-size: 32px;
+    }
+
+    .gallery-prev {
+        left: 8px;
+    }
+
+    .gallery-next {
+        right: 8px;
+    }
+
+    .lightbox-content img {
+        max-width: 92vw;
+        max-height: 78vh;
+    }
+}
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        align-items: flex-start;
+    }
+
+
+    .brand span {
+        display: none;
+    }
+
+
+    nav .links {
+        gap: 10px;
+    }
+
+
+    nav a {
+        font-size: 10px;
+    }
+
+
+    .hero {
+        min-height: 78vh;
+
+        padding-top: 45px;
+    }
+
+
+    .grid,
+    .promos,
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+
+    .gallery {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .section-title h2 {
+        font-size: 48px;
+    }
+
+
+    .card p {
+        margin-right: 55px;
+    }
+
+
+    .btn {
+        display: block;
+
+        margin: 8px auto !important;
+
+        max-width: 280px;
+    }
+
+
+    /* Visores en celular */
+
+    .lightbox,
+    .drink-lightbox {
+        padding: 15px;
+    }
+
+
+    .lightbox-content,
+    .drink-content {
+        max-width: 95vw;
+
+        max-height: 90vh;
+    }
+
+
+    .lightbox-content img,
+    .drink-content img {
+        max-width: 95vw;
+
+        max-height: 82vh;
+    }
+
+
+    .close {
+        top: -38px;
+
+        font-size: 27px;
+    }
+
+}
+
+
