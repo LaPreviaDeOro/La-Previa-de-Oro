@@ -1,340 +1,243 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>La Previa de Oro | Carta</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+    <meta name="description"
+          content="La Previa de Oro - Carta digital de tragos en General Fernández Oro">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="theme-color"
+          content="#050505">
 
-<link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
+    <title>La Previa de Oro | Carta</title>
 
+    <link rel="icon"
+          type="image/jpeg"
+          href="logo.jpg">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="style.css">
 
 </head>
 
-<body>
+
+<body id="top">
 
 
 <!-- =========================
-     NAVEGACIÓN
-========================== -->
+     HEADER
+========================= -->
 
 <header>
-    <nav>
 
-        <a href="#inicio" class="brand">
-            <img src="logo.jpg" alt="Logo La Previa de Oro">
-            <span>LA PREVIA DE ORO</span>
+    <div class="container navbar">
+
+        <a href="#top"
+           class="logo">
+
+            <img src="logo.jpg"
+                 alt="La Previa de Oro">
+
         </a>
 
-        <div class="links">
-            <a href="#carta">Carta</a>
-            <a href="#tragos">Tragos</a>
-            <a href="#promos">Promos</a>
-            <a href="#galeria">Galería</a>
-            <a href="#contacto">Contacto</a>
-        </div>
 
-    </nav>
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Abrir menú">
+
+            ☰
+
+        </button>
+
+
+        <ul class="nav-links"
+            id="menu">
+
+            <li>
+                <a href="#carta">Carta</a>
+            </li>
+
+            <li>
+                <a href="#promos">Promos</a>
+            </li>
+
+            <li>
+                <a href="#galeria">Galería</a>
+            </li>
+
+            <li>
+                <a href="#contacto">Contacto</a>
+            </li>
+
+        </ul>
+
+    </div>
+
 </header>
 
 
 <!-- =========================
-     INICIO
-========================== -->
+     HERO
+========================= -->
 
-<main id="inicio">
+<section class="hero">
 
-    <section class="hero">
+    <div class="hero-content">
 
-        <div class="hero-inner">
+        <img src="logo.jpg"
+             alt="La Previa de Oro"
+             class="hero-logo">
 
-            <img
-                class="logo"
-                src="logo.jpg"
-                alt="La Previa de Oro">
+        <div class="eyebrow">
+            GFO · CARTA DIGITAL
+        </div>
 
-            <div class="kicker">
-                GFO · CARTA DIGITAL
-            </div>
+        <h1>
+            La previa<br>
+            empieza acá
+        </h1>
 
-            <h1>
-                La previa<br>
-                empieza acá
-            </h1>
+        <p>
+            Tragos, promos y mucho sabor.
+            Elegí tu favorito y disfrutá la noche.
+        </p>
 
-            <p>
-                Tragos, promos y buena onda para arrancar la noche.
-                Elegí tu favorito y preparate para disfrutar.
-            </p>
+        <div class="hero-buttons">
 
-            <div>
+            <a href="#carta"
+               class="btn btn-primary">
+                Ver carta
+            </a>
 
-                <a href="#carta" class="btn">
-                    Ver carta
-                </a>
-
-                <a href="#promos" class="btn alt">
-                    Ver promos
-                </a>
-
-            </div>
+            <a href="https://wa.me/542994388701"
+               target="_blank"
+               class="btn btn-outline">
+                WhatsApp
+            </a>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- =========================
-         CARTA
-    ========================== -->
+<!-- =========================
+     CARTA
+========================= -->
 
-    <section id="carta">
+<section id="carta">
+
+    <div class="container">
 
         <div class="section-title">
 
-            <div class="small">
-                Nuestra propuesta
-            </div>
-
-            <h2>
-                Carta
-            </h2>
+            <h2>Carta</h2>
 
             <p>
-                Elegí tu trago favorito para comenzar la noche.
+                Elegí tu trago
             </p>
 
         </div>
 
 
         <!-- =========================
-             TRAGOS
-        ========================== -->
+             TRAGOS CLÁSICOS
+        ========================= -->
 
-        <div id="tragos">
+        <div class="menu-category">
 
-            <div class="category">
+            <h3 class="category-title">
                 Tragos clásicos
-            </div>
+            </h3>
+
 
             <div class="grid">
 
-                <a href="#trago-gancia" class="card">
-                    <h3>Gancia c/Sprite</h3>
-                    <span class="price">$10.000</span>
-                </a>
 
-                <a href="#trago-vodka" class="card">
-                    <h3>Vodka Clásico c/Sprite</h3>
-                    <span class="price">$10.000</span>
-                </a>
+                <!-- GANCIA -->
 
-                <a href="#trago-sky" class="card">
-                    <h3>Sky Cosmic c/Energizante</h3>
-                    <span class="price">$12.000</span>
-                </a>
+                <a href="#trago-gancia"
+                   class="card drink-card">
 
-            </div>
+                    <div class="card-info">
 
+                        <h3>
+                            Gancia c/Sprite
+                        </h3>
 
-            <div class="category">
-                Tragos de la casa
-            </div>
+                        <p class="description">
+                            Gancia acompañado con Sprite.
+                        </p>
 
-            <div class="grid">
+                        <div class="price">
+                            $10.000
+                        </div>
 
-                <a href="#trago-rojo" class="card">
-
-                    <h3>Rojo Previa</h3>
-
-                    <span class="price">
-                        $13.000
-                    </span>
-
-                    <p>
-                        Vodka Sky Cosmic, Monster Saborizada,
-                        Golosinas Premium.
-                    </p>
+                    </div>
 
                 </a>
 
 
-                <a href="#trago-arcoiris" class="card">
+                <!-- VODKA -->
 
-                    <h3>Arcoiris</h3>
+                <a href="#trago-vodka"
+                   class="card drink-card">
 
-                    <span class="price">
-                        $13.000
-                    </span>
+                    <div class="card-info">
 
-                    <p>
-                        Vodka Saborizado, Granadina,
-                        Jugo de Naranja, Energizante Azul,
-                        Golosinas Premium.
-                    </p>
+                        <h3>
+                            Vodka Clásico c/Sprite
+                        </h3>
 
-                </a>
+                        <p class="description">
+                            Vodka clásico acompañado con Sprite.
+                        </p>
 
+                        <div class="price">
+                            $10.000
+                        </div>
 
-                <a href="#trago-flynn" class="card">
-
-                    <h3>Flynn Paff</h3>
-
-                    <span class="price">
-                        $13.000
-                    </span>
-
-                    <p>
-                        Vodka Saborizado, Caramelos Flynn Paff,
-                        Bebida con Gas, Golosinas Premium.
-                    </p>
+                    </div>
 
                 </a>
 
 
-                <a href="#trago-pop" class="card">
+                <!-- SKY -->
 
-                    <h3>Trago Pop</h3>
+                <a href="#trago-sky"
+                   class="card drink-card">
 
-                    <span class="price">
-                        $13.000
-                    </span>
+                    <div class="card-info">
 
-                    <p>
-                        Vodka Saborizado, Chupetines "Pop",
-                        Energizante Azul, Bebida con Gas,
-                        Golosinas Premium.
-                    </p>
+                        <h3>
+                            Sky Cosmic c/Energizante
+                        </h3>
 
-                </a>
+                        <p class="description">
+                            Sky Cosmic acompañado con energizante.
+                        </p>
 
+                        <div class="price">
+                            $12.000
+                        </div>
 
-                <a href="#trago-dulce" class="card">
-
-                    <h3>Dulce Colón Rojo</h3>
-
-                    <span class="price">
-                        $13.000
-                    </span>
-
-                    <p>
-                        Vino Dulce Colon "Frutos Rojos",
-                        Bebida con Gas, Frutos Rojos,
-                        Golosinas Premium.
-                    </p>
-
-                </a>
-
-                   <!-- CAIPI SANDÍA CORREGIDO -->
-
-                <a href="#trago-sandia" class="card">
-
-                    <h3>Caipi Sandía</h3>
-
-                    <span class="price">
-                        $13.000
-                    </span>
-
-                    <p>
-                        Vodka de sandía, limón,
-                        Monster rojo Watermelon
-                        y golosinas Premium.
-                    </p>
-
-                </a>
-
-
-                <a href="#trago-frutilla" class="card">
-
-                    <h3>Daikiri Frutilla</h3>
-
-                    <span class="price">
-                        $14.000
-                    </span>
-
-                    <p>
-                        Vodka Saborizado, Frutillas Frescas,
-                        Bebida con Gas, Pulpa Frutilla,
-                        Golosinas Premium.
-                    </p>
-
-                </a>
-
-
-                <a href="#trago-durazno" class="card">
-
-                    <h3>Daikiri Durazno</h3>
-
-                    <span class="price">
-                        $14.000
-                    </span>
-
-                    <p>
-                        Vodka Saborizada, Duraznos Frescos,
-                        Almíbar, Energizante Saborizado,
-                        Jugo de Naranja, Golosinas Premium.
-                    </p>
-
-                </a>
-
-
-                <a href="#trago-baileys" class="card">
-
-                    <h3>Baileys Deluxe</h3>
-
-                    <span class="price">
-                        $15.000
-                    </span>
-
-                    <p>
-                        Licor de Crema con Whisky,
-                        Helado Crema Americana,
-                        Vodka Saborizado,
-                        Crema Chantilly, Alfajor Rasta.
-                    </p>
-
-                </a>
-
-
-                <a href="#trago-serenito" class="card">
-
-                    <h3>Serenito</h3>
-
-                    <span class="price">
-                        $15.000
-                    </span>
-
-                    <p>
-                        Serenito Licor de Dulce de Leche,
-                        Vodka Saborizado, Helado de DDL,
-                        Crema Chantilly, Golosinas Premium.
-                    </p>
-
-                </a>
-
-                <a href="#trago-selva" class="card">
-
-                    <h3>Palito de la Selva</h3>
-
-                    <span class="price">
-                        $15.000
-                    </span>
-
-                    <p>
-                        Caramelos Palitos de la Selva,
-                        helado de frutilla,
-                        helado de americana,
-                        vodka clásico y golosinas Premium.
-                    </p>
+                    </div>
 
                 </a>
 
@@ -342,27 +245,451 @@
 
         </div>
 
-    </section>
+
+        <!-- =========================
+             TRAGOS DE LA CASA
+        ========================= -->
+
+        <div class="menu-category">
+
+            <h3 class="category-title">
+                Tragos de la casa
+            </h3>
 
 
-    <!-- =========================
-         PROMOCIONES
-    ========================== -->
+            <div class="grid">
 
-    <section id="promos">
+
+                <!-- ROJO PREVIA -->
+
+                <a href="#trago-rojo"
+                   class="card drink-card">
+
+                    <div class="card-image">
+
+                        <img src="Rojo Previa.jpeg"
+                             alt="Rojo Previa">
+
+                    </div>
+
+                    <div class="card-info">
+
+                        <h3>
+                            Rojo Previa
+                        </h3>
+
+                        <p class="description">
+                            Vodka Sky Cosmic, Monster Saborizada,
+                            Golosinas Premium.
+                        </p>
+
+                        <div class="price">
+                            $13.000
+                        </div>
+
+                        <span class="view-drink">
+                            Ver trago →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- ARCOIRIS -->
+
+                <a href="#trago-arcoiris"
+                   class="card drink-card">
+
+                    <div class="card-image">
+
+                        <img src="Arcoiris.jpeg"
+                             alt="Arcoiris">
+
+                    </div>
+
+                    <div class="card-info">
+
+                        <h3>
+                            Arcoiris
+                        </h3>
+
+                        <p class="description">
+                            Vodka Saborizado, Granadina,
+                            Jugo de Naranja, Energizante Azul,
+                            Golosinas Premium.
+                        </p>
+
+                        <div class="price">
+                            $13.000
+                        </div>
+
+                        <span class="view-drink">
+                            Ver trago →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- FLYNN PAFF -->
+
+                <a href="#trago-flynn"
+                   class="card drink-card">
+
+                    <div class="card-image">
+
+                        <img src="Flynn Paff.jpeg"
+                             alt="Flynn Paff">
+
+                    </div>
+
+                    <div class="card-info">
+
+                        <h3>
+                            Flynn Paff
+                        </h3>
+
+                        <p class="description">
+                            Vodka Saborizado, Caramelos Flynn Paff,
+                            Bebida con Gas, Golosinas Premium.
+                        </p>
+
+                        <div class="price">
+                            $13.000
+                        </div>
+
+                        <span class="view-drink">
+                            Ver trago →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- TRAGO POP -->
+
+                <a href="#trago-pop"
+                   class="card drink-card">
+
+                    <div class="card-image">
+
+                        <img src="Trago PoP.jpeg"
+                             alt="Trago Pop">
+
+                    </div>
+
+                    <div class="card-info">
+
+                        <h3>
+                            Trago Pop
+                        </h3>
+
+                        <p class="description">
+                            Vodka Saborizado, Chupetines Pop,
+                            Energizante Azul, Bebida con Gas,
+                            Golosinas Premium.
+                        </p>
+
+                        <div class="price">
+                            $13.000
+                        </div>
+
+                        <span class="view-drink">
+                            Ver trago →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- DULCE COLON -->
+
+                <a href="#trago-dulce"
+                   class="card drink-card">
+
+                    <div class="card-image">
+
+                        <img src="Dulce Colon Rojo.jpeg"
+                             alt="Dulce Colon Rojo">
+
+                    </div>
+
+                    <div class="card-info">
+
+                        <h3>
+                            Dulce Colón Rojo
+                        </h3>
+
+                        <p class="description">
+                            Vino Dulce Colón Frutos Rojos,
+                            Bebida con Gas, Frutos Rojos,
+                            Golosinas Premium.
+                        </p>
+
+                        <div class="price">
+                            $13.000
+                        </div>
+
+                        <span class="view-drink">
+                            Ver trago →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- DAIKIRI FRUTILLA -->
+
+                <a href="#trago-frutilla"
+                   class="card drink-card">
+
+                    <div class="card-image">
+
+                        <img src="Daikiri Frutilla.jpeg"
+                             alt="Daikiri Frutilla">
+
+                    </div>
+
+                    <div class="card-info">
+
+                        <h3>
+                            Daikiri Frutilla
+                        </h3>
+
+                        <p class="description">
+                            Vodka Saborizado, Frutillas Frescas,
+                            Bebida con Gas, Pulpa Frutilla,
+                            Golosinas Premium.
+                        </p>
+
+                        <div class="price">
+                            $14.000
+                        </div>
+
+                        <span class="view-drink">
+                            Ver trago →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- DAIKIRI DURAZNO -->
+
+                <a href="#trago-durazno"
+                   class="card drink-card">
+
+                    <div class="card-image">
+
+                        <img src="Daikiri Durazno.jpeg"
+                             alt="Daikiri Durazno">
+
+                    </div>
+
+                    <div class="card-info">
+
+                        <h3>
+                            Daikiri Durazno
+                        </h3>
+
+                        <p class="description">
+                            Vodka Saborizada, Duraznos Frescos,
+                            Almíbar, Energizante Saborizado,
+                            Jugo de Naranja, Golosinas Premium.
+                        </p>
+
+                        <div class="price">
+                            $14.000
+                        </div>
+
+                        <span class="view-drink">
+                            Ver trago →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- BAILEYS -->
+
+                <a href="#trago-baileys"
+                   class="card drink-card">
+
+                    <div class="card-image">
+
+                        <img src="Baileys Deluxe.jpeg"
+                             alt="Baileys Deluxe">
+
+                    </div>
+
+                    <div class="card-info">
+
+                        <h3>
+                            Baileys Deluxe
+                        </h3>
+
+                        <p class="description">
+                            Licor de Crema con Whisky,
+                            Helado Crema Americana,
+                            Vodka Saborizado,
+                            Crema Chantilly, Alfajor Rasta.
+                        </p>
+
+                        <div class="price">
+                            $15.000
+                        </div>
+
+                        <span class="view-drink">
+                            Ver trago →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- SERENITO -->
+
+                <a href="#trago-serenito"
+                   class="card drink-card">
+
+                    <div class="card-image">
+
+                        <img src="Serenito.jpeg"
+                             alt="Serenito">
+
+                    </div>
+
+                    <div class="card-info">
+
+                        <h3>
+                            Serenito
+                        </h3>
+
+                        <p class="description">
+                            Serenito Licor de Dulce de Leche,
+                            Vodka Saborizado, Helado de DDL,
+                            Crema Chantilly, Golosinas Premium.
+                        </p>
+
+                        <div class="price">
+                            $15.000
+                        </div>
+
+                        <span class="view-drink">
+                            Ver trago →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- CAIPI -->
+
+                <a href="#trago-caipi"
+                   class="card drink-card">
+
+                    <div class="card-image">
+
+                        <img src="01 Caipi de Sandía.jpeg"
+                             alt="Caipi de Sandía">
+
+                    </div>
+
+                    <div class="card-info">
+
+                        <h3>
+                            Caipi Sandía
+                        </h3>
+
+                        <p class="description">
+                            Vodka de sandía, limón,
+                            Monster rojo Watermelon
+                            y golosinas Premium.
+                        </p>
+
+                        <div class="price">
+                            $13.000
+                        </div>
+
+                        <span class="view-drink">
+                            Ver trago →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- PALITO -->
+
+                <a href="#trago-palito"
+                   class="card drink-card">
+
+                    <div class="card-image">
+
+                        <img src="Trago Palito de la Selva.jpeg"
+                             alt="Palito de la Selva">
+
+                    </div>
+
+                    <div class="card-info">
+
+                        <h3>
+                            Palito de la Selva
+                        </h3>
+
+                        <p class="description">
+                            Caramelos Palitos de la Selva,
+                            helado de frutilla,
+                            helado de americana,
+                            vodka clásico y
+                            golosinas Premium.
+                        </p>
+
+                        <div class="price">
+                            $15.000
+                        </div>
+
+                        <span class="view-drink">
+                            Ver trago →
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PROMOS
+========================= -->
+
+<section id="promos">
+
+    <div class="container">
 
         <div class="section-title">
 
-            <div class="small">
-                Para compartir
-            </div>
-
-            <h2>
-                Promos
-            </h2>
+            <h2>Promos</h2>
 
             <p>
-                Aprovechá nuestras promociones.
+                Para compartir
             </p>
 
         </div>
@@ -372,52 +699,58 @@
 
             <div class="promo">
 
-                <strong>
-                    X2 Tragos
-                </strong>
+                <h3>
+                    X2 Dulce Colón Rojo
+                </h3>
 
-                <span>
-                    Dulce Colón Rojo · $22.000
-                </span>
+                <p>
+                    Llevando 2 tragos
+                </p>
+
+                <strong>
+                    $22.000
+                </strong>
 
             </div>
 
 
             <div class="promo">
 
-                <strong>
-                    X2 Tragos
-                </strong>
+                <h3>
+                    Arcoiris + Rojo Previa
+                </h3>
 
-                <span>
-                    Arcoiris + Rojo Previa · $23.000
-                </span>
+                <p>
+                    Promo x2
+                </p>
+
+                <strong>
+                    $23.000
+                </strong>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- =========================
-         GALERÍA
-    ========================== -->
+<!-- =========================
+     GALERÍA
+========================= -->
 
-    <section id="galeria">
+<section id="galeria">
+
+    <div class="container">
 
         <div class="section-title">
 
-            <div class="small">
-                Conocé nuestra propuesta
-            </div>
-
-            <h2>
-                Galería
-            </h2>
+            <h2>Galería</h2>
 
             <p>
-                Hacé clic sobre las imágenes para verlas en tamaño completo.
+                Algunos de nuestros tragos
             </p>
 
         </div>
@@ -425,969 +758,246 @@
 
         <div class="gallery">
 
-            <a href="#img1" class="photo">
-                <img
-                    src="Arcoiris.jpeg"
-                    alt="Trago Arcoiris">
+
+            <a href="#img1"
+               class="photo">
+
+                <img src="Arcoiris.jpeg"
+                     alt="Arcoiris">
+
             </a>
 
 
-            <a href="#img2" class="photo">
-                <img
-                    src="Baileys Deluxe.jpeg"
-                    alt="Baileys Deluxe">
+            <a href="#img2"
+               class="photo">
+
+                <img src="Baileys Deluxe.jpeg"
+                     alt="Baileys Deluxe">
+
             </a>
 
 
-            <a href="#img3" class="photo">
-                <img
-                    src="Daikiri Durazno.jpeg"
-                    alt="Daikiri Durazno">
+            <a href="#img3"
+               class="photo">
+
+                <img src="Daikiri Durazno.jpeg"
+                     alt="Daikiri Durazno">
+
             </a>
 
 
-            <a href="#img4" class="photo">
-                <img
-                    src="Daikiri Frutilla.jpeg"
-                    alt="Daikiri Frutilla">
+            <a href="#img4"
+               class="photo">
+
+                <img src="Daikiri Frutilla.jpeg"
+                     alt="Daikiri Frutilla">
+
             </a>
 
 
-            <a href="#img5" class="photo">
-                <img
-                    src="Dulce Colon Rojo.jpeg"
-                    alt="Dulce Colón Rojo">
+            <a href="#img5"
+               class="photo">
+
+                <img src="Dulce Colon Rojo.jpeg"
+                     alt="Dulce Colon Rojo">
+
             </a>
 
 
-            <a href="#img6" class="photo">
-                <img
-                    src="Flynn Paff.jpeg"
-                    alt="Flynn Paff">
+            <a href="#img6"
+               class="photo">
+
+                <img src="Flynn Paff.jpeg"
+                     alt="Flynn Paff">
+
             </a>
 
 
-            <a href="#img7" class="photo">
-                <img
-                    src="Rojo Previa.jpeg"
-                    alt="Rojo Previa">
+            <a href="#img7"
+               class="photo">
+
+                <img src="Rojo Previa.jpeg"
+                     alt="Rojo Previa">
+
             </a>
 
 
-            <a href="#img8" class="photo">
-                <img
-                    src="Serenito.jpeg"
-                    alt="Serenito">
+            <a href="#img8"
+               class="photo">
+
+                <img src="Serenito.jpeg"
+                     alt="Serenito">
+
             </a>
 
 
-            <a href="#img9" class="photo">
-                <img
-                    src="Trago PoP.jpeg"
-                    alt="Trago Pop">
+            <a href="#img9"
+               class="photo">
+
+                <img src="Trago PoP.jpeg"
+                     alt="Trago Pop">
+
             </a>
 
 
-            <a href="#img10" class="photo">
-                <img
-                    src="Golosinas Arcoiris.jpeg"
-                    alt="Golosinas Arcoiris">
+            <a href="#img10"
+               class="photo">
+
+                <img src="Golosinas Arcoiris.jpeg"
+                     alt="Golosinas Arcoiris">
+
             </a>
 
 
-            <a href="#img11" class="photo">
-                <img
-                    src="Golosinas Daikiri Durazno.jpeg"
-                    alt="Golosinas Daikiri Durazno">
+            <a href="#img11"
+               class="photo">
+
+                <img src="Golosinas Daikiri Durazno.jpeg"
+                     alt="Golosinas Daikiri Durazno">
+
             </a>
 
 
-            <a href="#img12" class="photo">
-                <img
-                    src="Golosinas Rojo Previa.jpeg"
-                    alt="Golosinas Rojo Previa">
+            <a href="#img12"
+               class="photo">
+
+                <img src="Golosinas Rojo Previa.jpeg"
+                     alt="Golosinas Rojo Previa">
+
             </a>
 
 
-            <a href="#img13" class="photo">
-                <img
-                    src="Golosinas Serenito.jpeg"
-                    alt="Golosinas Serenito">
+            <a href="#img13"
+               class="photo">
+
+                <img src="Golosinas Serenito.jpeg"
+                     alt="Golosinas Serenito">
+
             </a>
 
 
-            <a href="#img14" class="photo">
-                <img
-                    src="Alfajor Baileys Deluxe.jpeg"
-                    alt="Alfajor Baileys Deluxe">
+            <a href="#img14"
+               class="photo">
+
+                <img src="Alfajor Baileys Deluxe.jpeg"
+                     alt="Alfajor Baileys Deluxe">
+
             </a>
 
 
-            <a href="#img15" class="photo">
-                <img
-                    src="Frutos Rojos Dulce Colon Rojo.jpeg"
-                    alt="Frutos Rojos Dulce Colon Rojo">
+            <a href="#img15"
+               class="photo">
+
+                <img src="Frutos Rojos Dulce Colon Rojo.jpeg"
+                     alt="Frutos Rojos">
+
             </a>
 
 
-            <!-- CAIPI SANDÍA 1 -->
+            <a href="#img16"
+               class="photo">
 
-            <a href="#img16" class="photo">
-                <img
-                    src="01 Caipi de Sandía.jpeg"
-                    alt="Caipi de Sandía">
+                <img src="01 Caipi de Sandía.jpeg"
+                     alt="Caipi de Sandía">
+
             </a>
 
 
-            <!-- CAIPI SANDÍA 2 -->
+            <a href="#img17"
+               class="photo">
 
-            <a href="#img17" class="photo">
-                <img
-                    src="02 Caipi de Sandía.jpeg"
-                    alt="Caipi de Sandía">
+                <img src="02 Caipi de Sandía.jpeg"
+                     alt="Caipi de Sandía">
+
             </a>
 
 
-            <!-- PALITO DE LA SELVA -->
+            <a href="#img18"
+               class="photo">
 
-            <a href="#img18" class="photo">
-                <img
-                    src="Trago Palito de la Selva.jpeg"
-                    alt="Palito de la Selva">
+                <img src="Trago Palito de la Selva.jpeg"
+                     alt="Palito de la Selva">
+
             </a>
 
 
-            <!-- GOLOSINAS PALITO DE LA SELVA -->
+            <a href="#img19"
+               class="photo">
 
-            <a href="#img19" class="photo">
-                <img
-                    src="Golosinas Palito de la Selva.jpeg"
-                    alt="Golosinas Palito de la Selva">
+                <img src="Golosinas Palito de la Selva.jpeg"
+                     alt="Golosinas Palito de la Selva">
+
             </a>
 
         </div>
 
-    </section>
-
-
-    <!-- =========================
-         VISOR DE GALERÍA
-    ========================== -->
-
-
-    <div id="img1" class="lightbox">
-
-        <a href="#galeria" class="lightbox-background"></a>
-
-        <div class="lightbox-content">
-
-            <a href="#galeria" class="close">✕</a>
-
-            <button class="gallery-prev" aria-label="Imagen anterior">
-                ‹
-            </button>
-
-            <img
-                src="Arcoiris.jpeg"
-                alt="Trago Arcoiris">
-
-            <button class="gallery-next" aria-label="Imagen siguiente">
-                ›
-            </button>
-
-        </div>
-
     </div>
 
+</section>
 
-    <div id="img2" class="lightbox">
 
-        <a href="#galeria" class="lightbox-background"></a>
+<!-- =========================
+     CONTACTO
+========================= -->
 
-        <div class="lightbox-content">
+<section id="contacto">
 
-            <a href="#galeria" class="close">✕</a>
-
-            <button class="gallery-prev" aria-label="Imagen anterior">
-                ‹
-            </button>
-
-            <img
-                src="Baileys Deluxe.jpeg"
-                alt="Baileys Deluxe">
-
-            <button class="gallery-next" aria-label="Imagen siguiente">
-                ›
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <div id="img3" class="lightbox">
-
-        <a href="#galeria" class="lightbox-background"></a>
-
-        <div class="lightbox-content">
-
-            <a href="#galeria" class="close">✕</a>
-
-            <button class="gallery-prev" aria-label="Imagen anterior">
-                ‹
-            </button>
-
-            <img
-                src="Daikiri Durazno.jpeg"
-                alt="Daikiri Durazno">
-
-            <button class="gallery-next" aria-label="Imagen siguiente">
-                ›
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <div id="img4" class="lightbox">
-
-        <a href="#galeria" class="lightbox-background"></a>
-
-        <div class="lightbox-content">
-
-            <a href="#galeria" class="close">✕</a>
-
-            <button class="gallery-prev" aria-label="Imagen anterior">
-                ‹
-            </button>
-
-            <img
-                src="Daikiri Frutilla.jpeg"
-                alt="Daikiri Frutilla">
-
-            <button class="gallery-next" aria-label="Imagen siguiente">
-                ›
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <div id="img5" class="lightbox">
-
-        <a href="#galeria" class="lightbox-background"></a>
-
-        <div class="lightbox-content">
-
-            <a href="#galeria" class="close">✕</a>
-
-            <button class="gallery-prev" aria-label="Imagen anterior">
-                ‹
-            </button>
-
-            <img
-                src="Dulce Colon Rojo.jpeg"
-                alt="Dulce Colón Rojo">
-
-            <button class="gallery-next" aria-label="Imagen siguiente">
-                ›
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <div id="img6" class="lightbox">
-
-        <a href="#galeria" class="lightbox-background"></a>
-
-        <div class="lightbox-content">
-
-            <a href="#galeria" class="close">✕</a>
-
-            <button class="gallery-prev" aria-label="Imagen anterior">
-                ‹
-            </button>
-
-            <img
-                src="Flynn Paff.jpeg"
-                alt="Flynn Paff">
-
-            <button class="gallery-next" aria-label="Imagen siguiente">
-                ›
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <div id="img7" class="lightbox">
-
-        <a href="#galeria" class="lightbox-background"></a>
-
-        <div class="lightbox-content">
-
-            <a href="#galeria" class="close">✕</a>
-
-            <button class="gallery-prev" aria-label="Imagen anterior">
-                ‹
-            </button>
-
-            <img
-                src="Rojo Previa.jpeg"
-                alt="Rojo Previa">
-
-            <button class="gallery-next" aria-label="Imagen siguiente">
-                ›
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <div id="img8" class="lightbox">
-
-        <a href="#galeria" class="lightbox-background"></a>
-
-        <div class="lightbox-content">
-
-            <a href="#galeria" class="close">✕</a>
-
-            <button class="gallery-prev" aria-label="Imagen anterior">
-                ‹
-            </button>
-
-            <img
-                src="Serenito.jpeg"
-                alt="Serenito">
-
-            <button class="gallery-next" aria-label="Imagen siguiente">
-                ›
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <div id="img9" class="lightbox">
-
-        <a href="#galeria" class="lightbox-background"></a>
-
-        <div class="lightbox-content">
-
-            <a href="#galeria" class="close">✕</a>
-
-            <button class="gallery-prev" aria-label="Imagen anterior">
-                ‹
-            </button>
-
-            <img
-                src="Trago PoP.jpeg"
-                alt="Trago Pop">
-
-            <button class="gallery-next" aria-label="Imagen siguiente">
-                ›
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <div id="img10" class="lightbox">
-
-        <a href="#galeria" class="lightbox-background"></a>
-
-        <div class="lightbox-content">
-
-            <a href="#galeria" class="close">✕</a>
-
-            <button class="gallery-prev" aria-label="Imagen anterior">
-                ‹
-            </button>
-
-            <img
-                src="Golosinas Arcoiris.jpeg"
-                alt="Golosinas Arcoiris">
-
-            <button class="gallery-next" aria-label="Imagen siguiente">
-                ›
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <div id="img11" class="lightbox">
-
-        <a href="#galeria" class="lightbox-background"></a>
-
-        <div class="lightbox-content">
-
-            <a href="#galeria" class="close">✕</a>
-
-            <button class="gallery-prev" aria-label="Imagen anterior">
-                ‹
-            </button>
-
-            <img
-                src="Golosinas Daikiri Durazno.jpeg"
-                alt="Golosinas Daikiri Durazno">
-
-            <button class="gallery-next" aria-label="Imagen siguiente">
-                ›
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <div id="img12" class="lightbox">
-
-        <a href="#galeria" class="lightbox-background"></a>
-
-        <div class="lightbox-content">
-
-            <a href="#galeria" class="close">✕</a>
-
-            <button class="gallery-prev" aria-label="Imagen anterior">
-                ‹
-            </button>
-
-            <img
-                src="Golosinas Rojo Previa.jpeg"
-                alt="Golosinas Rojo Previa">
-
-            <button class="gallery-next" aria-label="Imagen siguiente">
-                ›
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <div id="img13" class="lightbox">
-
-        <a href="#galeria" class="lightbox-background"></a>
-
-        <div class="lightbox-content">
-
-            <a href="#galeria" class="close">✕</a>
-
-            <button class="gallery-prev" aria-label="Imagen anterior">
-                ‹
-            </button>
-
-            <img
-                src="Golosinas Serenito.jpeg"
-                alt="Golosinas Serenito">
-
-            <button class="gallery-next" aria-label="Imagen siguiente">
-                ›
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <div id="img14" class="lightbox">
-
-        <a href="#galeria" class="lightbox-background"></a>
-
-        <div class="lightbox-content">
-
-            <a href="#galeria" class="close">✕</a>
-
-            <button class="gallery-prev" aria-label="Imagen anterior">
-                ‹
-            </button>
-
-            <img
-                src="Alfajor Baileys Deluxe.jpeg"
-                alt="Alfajor Baileys Deluxe">
-
-            <button class="gallery-next" aria-label="Imagen siguiente">
-                ›
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <div id="img15" class="lightbox">
-
-        <a href="#galeria" class="lightbox-background"></a>
-
-        <div class="lightbox-content">
-
-            <a href="#galeria" class="close">✕</a>
-
-            <button class="gallery-prev" aria-label="Imagen anterior">
-                ‹
-            </button>
-
-            <img
-                src="Frutos Rojos Dulce Colon Rojo.jpeg"
-                alt="Frutos Rojos Dulce Colon Rojo">
-
-            <button class="gallery-next" aria-label="Imagen siguiente">
-                ›
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- CAIPI SANDÍA 1 -->
-
-    <div id="img16" class="lightbox">
-
-        <a href="#galeria" class="lightbox-background"></a>
-
-        <div class="lightbox-content">
-
-            <a href="#galeria" class="close">✕</a>
-
-            <button class="gallery-prev" aria-label="Imagen anterior">
-                ‹
-            </button>
-
-            <img
-                src="01 Caipi de Sandía.jpeg"
-                alt="Caipi de Sandía">
-
-            <button class="gallery-next" aria-label="Imagen siguiente">
-                ›
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- CAIPI SANDÍA 2 -->
-
-    <div id="img17" class="lightbox">
-
-        <a href="#galeria" class="lightbox-background"></a>
-
-        <div class="lightbox-content">
-
-            <a href="#galeria" class="close">✕</a>
-
-            <button class="gallery-prev" aria-label="Imagen anterior">
-                ‹
-            </button>
-
-            <img
-                src="02 Caipi de Sandía.jpeg"
-                alt="Caipi de Sandía">
-
-            <button class="gallery-next" aria-label="Imagen siguiente">
-                ›
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- PALITO DE LA SELVA -->
-
-    <div id="img18" class="lightbox">
-
-        <a href="#galeria" class="lightbox-background"></a>
-
-        <div class="lightbox-content">
-
-            <a href="#galeria" class="close">✕</a>
-
-            <button class="gallery-prev" aria-label="Imagen anterior">
-                ‹
-            </button>
-
-            <img
-                src="Trago Palito de la Selva.jpeg"
-                alt="Palito de la Selva">
-
-            <button class="gallery-next" aria-label="Imagen siguiente">
-                ›
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- GOLOSINAS PALITO DE LA SELVA -->
-
-    <div id="img19" class="lightbox">
-
-        <a href="#galeria" class="lightbox-background"></a>
-
-        <div class="lightbox-content">
-
-            <a href="#galeria" class="close">✕</a>
-
-            <button class="gallery-prev" aria-label="Imagen anterior">
-                ‹
-            </button>
-
-            <img
-                src="Golosinas Palito de la Selva.jpeg"
-                alt="Golosinas Palito de la Selva">
-
-            <button class="gallery-next" aria-label="Imagen siguiente">
-                ›
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- =========================
-         VISOR DE TRAGOS
-    ========================== -->
-
-
-    <div id="trago-gancia" class="drink-lightbox">
-
-        <a href="#tragos" class="lightbox-background"></a>
-
-        <div class="drink-content">
-
-            <a href="#tragos" class="close">✕</a>
-
-            <img
-                src="Gancia.jpeg"
-                alt="Gancia con Sprite">
-
-        </div>
-
-    </div>
-
-
-    <div id="trago-vodka" class="drink-lightbox">
-
-        <a href="#tragos" class="lightbox-background"></a>
-
-        <div class="drink-content">
-
-            <a href="#tragos" class="close">✕</a>
-
-            <img
-                src="Vodka Clasico.jpeg"
-                alt="Vodka Clásico con Sprite">
-
-        </div>
-
-    </div>
-
-
-    <div id="trago-sky" class="drink-lightbox">
-
-        <a href="#tragos" class="lightbox-background"></a>
-
-        <div class="drink-content">
-
-            <a href="#tragos" class="close">✕</a>
-
-            <img
-                src="Sky Cosmic.jpeg"
-                alt="Sky Cosmic con Energizante">
-
-        </div>
-
-    </div>
-
-
-    <div id="trago-rojo" class="drink-lightbox">
-
-        <a href="#tragos" class="lightbox-background"></a>
-
-        <div class="drink-content">
-
-            <a href="#tragos" class="close">✕</a>
-
-            <img
-                src="Rojo Previa.jpeg"
-                alt="Rojo Previa">
-
-        </div>
-
-    </div>
-
-
-    <div id="trago-arcoiris" class="drink-lightbox">
-
-        <a href="#tragos" class="lightbox-background"></a>
-
-        <div class="drink-content">
-
-            <a href="#tragos" class="close">✕</a>
-
-            <img
-                src="Arcoiris.jpeg"
-                alt="Arcoiris">
-
-        </div>
-
-    </div>
-
-
-    <div id="trago-flynn" class="drink-lightbox">
-
-        <a href="#tragos" class="lightbox-background"></a>
-
-        <div class="drink-content">
-
-            <a href="#tragos" class="close">✕</a>
-
-            <img
-                src="Flynn Paff.jpeg"
-                alt="Flynn Paff">
-
-        </div>
-
-    </div>
-
-
-    <div id="trago-pop" class="drink-lightbox">
-
-        <a href="#tragos" class="lightbox-background"></a>
-
-        <div class="drink-content">
-
-            <a href="#tragos" class="close">✕</a>
-
-            <img
-                src="Trago PoP.jpeg"
-                alt="Trago Pop">
-
-        </div>
-
-    </div>
-
-
-    <div id="trago-dulce" class="drink-lightbox">
-
-        <a href="#tragos" class="lightbox-background"></a>
-
-        <div class="drink-content">
-
-            <a href="#tragos" class="close">✕</a>
-
-            <img
-                src="Dulce Colon Rojo.jpeg"
-                alt="Dulce Colón Rojo">
-
-        </div>
-
-    </div>
-
-
-    <div id="trago-frutilla" class="drink-lightbox">
-
-        <a href="#tragos" class="lightbox-background"></a>
-
-        <div class="drink-content">
-
-            <a href="#tragos" class="close">✕</a>
-
-            <img
-                src="Daikiri Frutilla.jpeg"
-                alt="Daikiri Frutilla">
-
-        </div>
-
-    </div>
-
-
-    <div id="trago-durazno" class="drink-lightbox">
-
-        <a href="#tragos" class="lightbox-background"></a>
-
-        <div class="drink-content">
-
-            <a href="#tragos" class="close">✕</a>
-
-            <img
-                src="Daikiri Durazno.jpeg"
-                alt="Daikiri Durazno">
-
-        </div>
-
-    </div>
-
-
-    <div id="trago-baileys" class="drink-lightbox">
-
-        <a href="#tragos" class="lightbox-background"></a>
-
-        <div class="drink-content">
-
-            <a href="#tragos" class="close">✕</a>
-
-            <img
-                src="Baileys Deluxe.jpeg"
-                alt="Baileys Deluxe">
-
-        </div>
-
-    </div>
-
-
-    <div id="trago-serenito" class="drink-lightbox">
-
-        <a href="#tragos" class="lightbox-background"></a>
-
-        <div class="drink-content">
-
-            <a href="#tragos" class="close">✕</a>
-
-            <img
-                src="Serenito.jpeg"
-                alt="Serenito">
-
-        </div>
-
-    </div>
-
-
-    <!-- CAIPI SANDÍA -->
-
-    <div id="trago-sandia" class="drink-lightbox">
-
-        <a href="#tragos" class="lightbox-background"></a>
-
-        <div class="drink-content">
-
-            <a href="#tragos" class="close">✕</a>
-
-            <img
-                src="01 Caipi de Sandía.jpeg"
-                alt="Caipi de Sandía">
-
-        </div>
-
-    </div>
-
-
-    <!-- PALITO DE LA SELVA -->
-
-    <div id="trago-selva" class="drink-lightbox">
-
-        <a href="#tragos" class="lightbox-background"></a>
-
-        <div class="drink-content">
-
-            <a href="#tragos" class="close">✕</a>
-
-            <img
-                src="Trago Palito de la Selva.jpeg"
-                alt="Palito de la Selva">
-
-        </div>
-
-    </div>
-
-
-    <!-- =========================
-         CONTACTO
-    ========================== -->
-
-    <section id="contacto">
+    <div class="container">
 
         <div class="section-title">
 
-            <div class="small">
-                Estamos para vos
-            </div>
+            <h2>Contacto</h2>
 
-            <h2>
-                Contacto
-            </h2>
+            <p>
+                Estamos en General Fernández Oro
+            </p>
 
         </div>
 
 
-        <div class="contact">
+        <div class="contact-box">
 
-            <div class="contact-box">
+
+            <div class="contact-item">
 
                 <h3>
-                    La Previa de Oro
+                    📍 Ubicación
                 </h3>
 
                 <p>
-
-                    📍 General Fernandez Oro
-
-                    <br><br>
-
-                    📱 WhatsApp:
-                    2994388701
-
-                    <br>
-
-                    🌐 Instagram:
-
-                    <a
-                        class="instagram-link"
-                        href="https://www.instagram.com/lapreviadeoro/"
-                        target="_blank"
-                        rel="noopener noreferrer">
-
-                        @lapreviadeoro
-
-                    </a>
-
-                    <br><br>
-
-                    ⏱️ Viernes y Sábado
-
-                    <br>
-
-                    23:00 a 04:00 hs
-
+                    General Fernández Oro,
+                    Río Negro
                 </p>
 
             </div>
 
 
-            <div class="contact-box">
+            <div class="contact-item">
 
                 <h3>
-                    Reservas
+                    📱 WhatsApp
                 </h3>
 
-                <p>
-                    Comunicate con nosotros para consultar
-                    disponibilidad y realizar tu reserva.
-                </p>
+                <a href="https://wa.me/542994388701"
+                   target="_blank">
 
-                <br>
+                    +54 9 299 438-8701
 
-                <a
-                    href="https://wa.me/542994388701"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn">
+                </a>
 
-                    WhatsApp
+            </div>
+
+
+            <div class="contact-item">
+
+                <h3>
+                    📸 Instagram
+                </h3>
+
+                <a href="https://www.instagram.com/lapreviadeoro/"
+                   target="_blank">
+
+                    @lapreviadeoro
 
                 </a>
 
@@ -1395,273 +1005,1358 @@
 
         </div>
 
-    </section>
 
-</main>
+        <div style="text-align:center; margin-top:30px; color:#bdb7aa;">
+
+            Viernes y Sábado · 23:00 a 04:00 hs
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     LIGHTBOX GALERÍA
+========================= -->
+
+
+<div class="lightbox"
+     id="img1">
+
+    <div class="lightbox-background"></div>
+
+    <div class="lightbox-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Arcoiris.jpeg"
+             alt="Arcoiris">
+
+    </div>
+
+</div>
+
+
+<div class="lightbox"
+     id="img2">
+
+    <div class="lightbox-background"></div>
+
+    <div class="lightbox-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Baileys Deluxe.jpeg"
+             alt="Baileys Deluxe">
+
+    </div>
+
+</div>
+
+
+<div class="lightbox"
+     id="img3">
+
+    <div class="lightbox-background"></div>
+
+    <div class="lightbox-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Daikiri Durazno.jpeg"
+             alt="Daikiri Durazno">
+
+    </div>
+
+</div>
+
+
+<div class="lightbox"
+     id="img4">
+
+    <div class="lightbox-background"></div>
+
+    <div class="lightbox-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Daikiri Frutilla.jpeg"
+             alt="Daikiri Frutilla">
+
+    </div>
+
+</div>
+
+
+<div class="lightbox"
+     id="img5">
+
+    <div class="lightbox-background"></div>
+
+    <div class="lightbox-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Dulce Colon Rojo.jpeg"
+             alt="Dulce Colon Rojo">
+
+    </div>
+
+</div>
+
+
+<div class="lightbox"
+     id="img6">
+
+    <div class="lightbox-background"></div>
+
+    <div class="lightbox-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Flynn Paff.jpeg"
+             alt="Flynn Paff">
+
+    </div>
+
+</div>
+
+
+<div class="lightbox"
+     id="img7">
+
+    <div class="lightbox-background"></div>
+
+    <div class="lightbox-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Rojo Previa.jpeg"
+             alt="Rojo Previa">
+
+    </div>
+
+</div>
+
+
+<div class="lightbox"
+     id="img8">
+
+    <div class="lightbox-background"></div>
+
+    <div class="lightbox-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Serenito.jpeg"
+             alt="Serenito">
+
+    </div>
+
+</div>
+
+
+<div class="lightbox"
+     id="img9">
+
+    <div class="lightbox-background"></div>
+
+    <div class="lightbox-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Trago PoP.jpeg"
+             alt="Trago Pop">
+
+    </div>
+
+</div>
+
+
+<div class="lightbox"
+     id="img10">
+
+    <div class="lightbox-background"></div>
+
+    <div class="lightbox-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Golosinas Arcoiris.jpeg"
+             alt="Golosinas Arcoiris">
+
+    </div>
+
+</div>
+
+
+<div class="lightbox"
+     id="img11">
+
+    <div class="lightbox-background"></div>
+
+    <div class="lightbox-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Golosinas Daikiri Durazno.jpeg"
+             alt="Golosinas Daikiri Durazno">
+
+    </div>
+
+</div>
+
+
+<div class="lightbox"
+     id="img12">
+
+    <div class="lightbox-background"></div>
+
+    <div class="lightbox-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Golosinas Rojo Previa.jpeg"
+             alt="Golosinas Rojo Previa">
+
+    </div>
+
+</div>
+
+
+<div class="lightbox"
+     id="img13">
+
+    <div class="lightbox-background"></div>
+
+    <div class="lightbox-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Golosinas Serenito.jpeg"
+             alt="Golosinas Serenito">
+
+    </div>
+
+</div>
+
+
+<div class="lightbox"
+     id="img14">
+
+    <div class="lightbox-background"></div>
+
+    <div class="lightbox-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Alfajor Baileys Deluxe.jpeg"
+             alt="Alfajor Baileys Deluxe">
+
+    </div>
+
+</div>
+
+
+<div class="lightbox"
+     id="img15">
+
+    <div class="lightbox-background"></div>
+
+    <div class="lightbox-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Frutos Rojos Dulce Colon Rojo.jpeg"
+             alt="Frutos Rojos">
+
+    </div>
+
+</div>
+
+
+<div class="lightbox"
+     id="img16">
+
+    <div class="lightbox-background"></div>
+
+    <div class="lightbox-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="01 Caipi de Sandía.jpeg"
+             alt="Caipi de Sandía">
+
+    </div>
+
+</div>
+
+
+<div class="lightbox"
+     id="img17">
+
+    <div class="lightbox-background"></div>
+
+    <div class="lightbox-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="02 Caipi de Sandía.jpeg"
+             alt="Caipi de Sandía">
+
+    </div>
+
+</div>
+
+
+<div class="lightbox"
+     id="img18">
+
+    <div class="lightbox-background"></div>
+
+    <div class="lightbox-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Trago Palito de la Selva.jpeg"
+             alt="Palito de la Selva">
+
+    </div>
+
+</div>
+
+
+<div class="lightbox"
+     id="img19">
+
+    <div class="lightbox-background"></div>
+
+    <div class="lightbox-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Golosinas Palito de la Selva.jpeg"
+             alt="Golosinas Palito de la Selva">
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     LIGHTBOX TRAGOS
+========================= -->
+
+
+<div class="drink-lightbox"
+     id="trago-gancia">
+
+    <div class="lightbox-background"></div>
+
+    <div class="drink-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Gancia.jpeg"
+             alt="Gancia">
+
+    </div>
+
+</div>
+
+
+<div class="drink-lightbox"
+     id="trago-vodka">
+
+    <div class="lightbox-background"></div>
+
+    <div class="drink-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Vodka Clasico.jpeg"
+             alt="Vodka Clásico">
+
+    </div>
+
+</div>
+
+
+<div class="drink-lightbox"
+     id="trago-sky">
+
+    <div class="lightbox-background"></div>
+
+    <div class="drink-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Sky Cosmic.jpeg"
+             alt="Sky Cosmic">
+
+    </div>
+
+</div>
+
+
+<div class="drink-lightbox"
+     id="trago-rojo">
+
+    <div class="lightbox-background"></div>
+
+    <div class="drink-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Rojo Previa.jpeg"
+             alt="Rojo Previa">
+
+    </div>
+
+</div>
+
+
+<div class="drink-lightbox"
+     id="trago-arcoiris">
+
+    <div class="lightbox-background"></div>
+
+    <div class="drink-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Arcoiris.jpeg"
+             alt="Arcoiris">
+
+    </div>
+
+</div>
+
+
+<div class="drink-lightbox"
+     id="trago-flynn">
+
+    <div class="lightbox-background"></div>
+
+    <div class="drink-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Flynn Paff.jpeg"
+             alt="Flynn Paff">
+
+    </div>
+
+</div>
+
+
+<div class="drink-lightbox"
+     id="trago-pop">
+
+    <div class="lightbox-background"></div>
+
+    <div class="drink-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Trago PoP.jpeg"
+             alt="Trago Pop">
+
+    </div>
+
+</div>
+
+
+<div class="drink-lightbox"
+     id="trago-dulce">
+
+    <div class="lightbox-background"></div>
+
+    <div class="drink-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Dulce Colon Rojo.jpeg"
+             alt="Dulce Colon Rojo">
+
+    </div>
+
+</div>
+
+
+<div class="drink-lightbox"
+     id="trago-frutilla">
+
+    <div class="lightbox-background"></div>
+
+    <div class="drink-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Daikiri Frutilla.jpeg"
+             alt="Daikiri Frutilla">
+
+    </div>
+
+</div>
+
+
+<div class="drink-lightbox"
+     id="trago-durazno">
+
+    <div class="lightbox-background"></div>
+
+    <div class="drink-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Daikiri Durazno.jpeg"
+             alt="Daikiri Durazno">
+
+    </div>
+
+</div>
+
+
+<div class="drink-lightbox"
+     id="trago-baileys">
+
+    <div class="lightbox-background"></div>
+
+    <div class="drink-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Baileys Deluxe.jpeg"
+             alt="Baileys Deluxe">
+
+    </div>
+
+</div>
+
+
+<div class="drink-lightbox"
+     id="trago-serenito">
+
+    <div class="lightbox-background"></div>
+
+    <div class="drink-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Serenito.jpeg"
+             alt="Serenito">
+
+    </div>
+
+</div>
+
+
+<div class="drink-lightbox"
+     id="trago-caipi">
+
+    <div class="lightbox-background"></div>
+
+    <div class="drink-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="01 Caipi de Sandía.jpeg"
+             alt="Caipi Sandía">
+
+    </div>
+
+</div>
+
+
+<div class="drink-lightbox"
+     id="trago-palito">
+
+    <div class="lightbox-background"></div>
+
+    <div class="drink-content">
+
+        <button class="close"
+                type="button">
+            ×
+        </button>
+
+        <img src="Trago Palito de la Selva.jpeg"
+             alt="Palito de la Selva">
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     BOTÓN ARRIBA
+========================= -->
+
+<a href="#top"
+   class="back-top"
+   aria-label="Volver arriba">
+
+    ↑
+
+</a>
 
 
 <!-- =========================
      FOOTER
-========================== -->
+========================= -->
 
 <footer>
 
-    © La Previa de Oro ·
-    <b>Carta digital</b>
+    <strong>
+        La Previa de Oro
+    </strong>
+
+    · General Fernández Oro
 
 </footer>
 
 
 <!-- =========================
      JAVASCRIPT
-     GALERÍA DESLIZABLE
-========================== -->
+========================= -->
 
 <script>
 
-    document.addEventListener("DOMContentLoaded", () => {
 
-        const lightboxes =
-            Array.from(
-                document.querySelectorAll(".lightbox")
-            );
+/* =========================
+   MENÚ MOBILE
+========================= */
 
-        let currentIndex = 0;
+const menuToggle =
+    document.getElementById("menuToggle");
 
-        let touchStartX = 0;
-        let touchEndX = 0;
+const menu =
+    document.getElementById("menu");
 
 
-        function getCurrentIndex() {
+menuToggle.addEventListener("click", function () {
 
-            const hash =
-                window.location.hash.replace("#", "");
+    menu.classList.toggle("active");
 
-            const index =
-                lightboxes.findIndex(
-                    lightbox => lightbox.id === hash
-                );
+});
 
-            return index >= 0 ? index : 0;
-        }
 
+document
+    .querySelectorAll("#menu a")
+    .forEach(function (link) {
 
-        function goToImage(index) {
+        link.addEventListener("click", function () {
 
-            if (!lightboxes.length) {
-                return;
-            }
-
-            if (index < 0) {
-                index = lightboxes.length - 1;
-            }
-
-            if (index >= lightboxes.length) {
-                index = 0;
-            }
-
-            currentIndex = index;
-
-            window.location.hash =
-                lightboxes[currentIndex].id;
-        }
-
-
-        function nextImage() {
-
-            goToImage(currentIndex + 1);
-
-        }
-
-
-        function previousImage() {
-
-            goToImage(currentIndex - 1);
-
-        }
-
-
-        /*
-         * BOTONES DE GALERÍA
-         */
-
-        lightboxes.forEach((lightbox) => {
-
-            const content =
-                lightbox.querySelector(
-                    ".lightbox-content"
-                );
-
-            if (!content) {
-                return;
-            }
-
-
-            const previous =
-                content.querySelector(
-                    ".gallery-prev"
-                );
-
-            const next =
-                content.querySelector(
-                    ".gallery-next"
-                );
-
-
-            if (previous) {
-
-                previous.addEventListener(
-                    "click",
-                    (event) => {
-
-                        event.preventDefault();
-                        event.stopPropagation();
-
-                        currentIndex =
-                            getCurrentIndex();
-
-                        previousImage();
-
-                    }
-                );
-
-            }
-
-
-            if (next) {
-
-                next.addEventListener(
-                    "click",
-                    (event) => {
-
-                        event.preventDefault();
-                        event.stopPropagation();
-
-                        currentIndex =
-                            getCurrentIndex();
-
-                        nextImage();
-
-                    }
-                );
-
-            }
-
-
-            /*
-             * DESLIZAR EN CELULAR
-             */
-
-            content.addEventListener(
-                "touchstart",
-                (event) => {
-
-                    touchStartX =
-                        event.changedTouches[0]
-                            .screenX;
-
-                },
-                { passive: true }
-            );
-
-
-            content.addEventListener(
-                "touchend",
-                (event) => {
-
-                    touchEndX =
-                        event.changedTouches[0]
-                            .screenX;
-
-                    const difference =
-                        touchStartX - touchEndX;
-
-
-                    /*
-                     * DESLIZAR HACIA LA IZQUIERDA
-                     */
-
-                    if (difference > 50) {
-
-                        currentIndex =
-                            getCurrentIndex();
-
-                        nextImage();
-
-                    }
-
-
-                    /*
-                     * DESLIZAR HACIA LA DERECHA
-                     */
-
-                    if (difference < -50) {
-
-                        currentIndex =
-                            getCurrentIndex();
-
-                        previousImage();
-
-                    }
-
-                },
-                { passive: true }
-            );
+            menu.classList.remove("active");
 
         });
 
+    });
 
-        /*
-         * TECLADO
-         */
 
-        document.addEventListener(
-            "keydown",
-            (event) => {
 
-                if (!window.location.hash) {
+/* =========================
+   GALERÍA
+========================= */
+
+const galleryLinks =
+    document.querySelectorAll(".photo");
+
+const galleryLightboxes =
+    document.querySelectorAll(".lightbox");
+
+
+let currentImage = 0;
+
+let savedScrollPosition = 0;
+
+
+
+/* ABRIR GALERÍA */
+
+galleryLinks.forEach(function (link, index) {
+
+    link.addEventListener("click", function (event) {
+
+        event.preventDefault();
+
+        savedScrollPosition = window.scrollY;
+
+        currentImage = index;
+
+        openGallery(currentImage);
+
+    });
+
+});
+
+
+
+function openGallery(index) {
+
+    galleryLightboxes.forEach(function (box) {
+
+        box.classList.remove("active");
+
+    });
+
+
+    currentImage = index;
+
+
+    galleryLightboxes[currentImage]
+        .classList.add("active");
+
+
+    document.body.classList.add("gallery-open");
+
+}
+
+
+
+/* CERRAR GALERÍA */
+
+function closeGallery() {
+
+    galleryLightboxes.forEach(function (box) {
+
+        box.classList.remove("active");
+
+    });
+
+
+    document.body.classList.remove("gallery-open");
+
+
+    /*
+       Volvemos exactamente a la posición
+       donde estaba el usuario.
+    */
+
+    window.scrollTo(
+        0,
+        savedScrollPosition
+    );
+
+}
+
+
+
+/* SIGUIENTE */
+
+function nextImage() {
+
+    currentImage++;
+
+    if (
+        currentImage >=
+        galleryLightboxes.length
+    ) {
+
+        currentImage = 0;
+
+    }
+
+    showImage(currentImage);
+
+}
+
+
+
+/* ANTERIOR */
+
+function previousImage() {
+
+    currentImage--;
+
+    if (currentImage < 0) {
+
+        currentImage =
+            galleryLightboxes.length - 1;
+
+    }
+
+    showImage(currentImage);
+
+}
+
+
+
+/* MOSTRAR IMAGEN */
+
+function showImage(index) {
+
+    galleryLightboxes.forEach(function (box) {
+
+        box.classList.remove("active");
+
+    });
+
+
+    currentImage = index;
+
+
+    galleryLightboxes[currentImage]
+        .classList.add("active");
+
+}
+
+
+
+/* =========================
+   CREAR FLECHAS
+========================= */
+
+galleryLightboxes.forEach(function (box) {
+
+
+    const prev =
+        document.createElement("button");
+
+    prev.className = "gallery-prev";
+
+    prev.innerHTML = "‹";
+
+    prev.setAttribute(
+        "aria-label",
+        "Imagen anterior"
+    );
+
+
+    const next =
+        document.createElement("button");
+
+    next.className = "gallery-next";
+
+    next.innerHTML = "›";
+
+    next.setAttribute(
+        "aria-label",
+        "Imagen siguiente"
+    );
+
+
+    box.appendChild(prev);
+
+    box.appendChild(next);
+
+
+
+    prev.addEventListener(
+        "click",
+        function (event) {
+
+            event.preventDefault();
+
+            event.stopPropagation();
+
+            previousImage();
+
+        }
+    );
+
+
+
+    next.addEventListener(
+        "click",
+        function (event) {
+
+            event.preventDefault();
+
+            event.stopPropagation();
+
+            nextImage();
+
+        }
+    );
+
+});
+
+
+
+/* =========================
+   CERRAR GALERÍA
+========================= */
+
+galleryLightboxes.forEach(function (box) {
+
+
+    const close =
+        box.querySelector(".close");
+
+
+    const background =
+        box.querySelector(
+            ".lightbox-background"
+        );
+
+
+
+    if (close) {
+
+        close.addEventListener(
+            "click",
+            function (event) {
+
+                event.preventDefault();
+
+                event.stopPropagation();
+
+                closeGallery();
+
+            }
+        );
+
+    }
+
+
+
+    if (background) {
+
+        background.addEventListener(
+            "click",
+            function (event) {
+
+                event.preventDefault();
+
+                closeGallery();
+
+            }
+        );
+
+    }
+
+});
+
+
+
+/* =========================
+   SWIPE MOBILE
+========================= */
+
+let touchStartX = 0;
+
+let touchStartY = 0;
+
+let touchEndX = 0;
+
+let touchEndY = 0;
+
+
+
+galleryLightboxes.forEach(function (box) {
+
+
+    box.addEventListener(
+        "touchstart",
+        function (event) {
+
+            touchStartX =
+                event.changedTouches[0].screenX;
+
+            touchStartY =
+                event.changedTouches[0].screenY;
+
+        },
+        { passive: true }
+    );
+
+
+
+    box.addEventListener(
+        "touchend",
+        function (event) {
+
+            touchEndX =
+                event.changedTouches[0].screenX;
+
+            touchEndY =
+                event.changedTouches[0].screenY;
+
+            handleSwipe();
+
+        },
+        { passive: true }
+    );
+
+});
+
+
+
+function handleSwipe() {
+
+    const differenceX =
+        touchStartX - touchEndX;
+
+
+    const differenceY =
+        touchStartY - touchEndY;
+
+
+
+    /*
+       Si el movimiento fue más vertical
+       que horizontal, no hacemos nada.
+    */
+
+    if (
+        Math.abs(differenceX) <
+        Math.abs(differenceY)
+    ) {
+
+        return;
+
+    }
+
+
+
+    /*
+       Evita detectar pequeños movimientos
+       como swipe.
+    */
+
+    if (
+        Math.abs(differenceX) < 50
+    ) {
+
+        return;
+
+    }
+
+
+
+    if (differenceX > 0) {
+
+        nextImage();
+
+    } else {
+
+        previousImage();
+
+    }
+
+}
+
+
+
+/* =========================
+   TECLADO
+========================= */
+
+document.addEventListener(
+    "keydown",
+    function (event) {
+
+
+        const galleryOpen =
+            document.querySelector(
+                ".lightbox.active"
+            );
+
+
+        const drinkOpen =
+            document.querySelector(
+                ".drink-lightbox.active"
+            );
+
+
+
+        if (galleryOpen) {
+
+
+            if (
+                event.key === "ArrowRight"
+            ) {
+
+                nextImage();
+
+            }
+
+
+            if (
+                event.key === "ArrowLeft"
+            ) {
+
+                previousImage();
+
+            }
+
+
+            if (
+                event.key === "Escape"
+            ) {
+
+                closeGallery();
+
+            }
+
+        }
+
+
+
+        if (
+            drinkOpen &&
+            event.key === "Escape"
+        ) {
+
+            closeDrink(drinkOpen);
+
+        }
+
+    }
+);
+
+
+
+/* =========================
+   LIGHTBOX DE TRAGOS
+========================= */
+
+const drinkLightboxes =
+    document.querySelectorAll(
+        ".drink-lightbox"
+    );
+
+
+
+document
+    .querySelectorAll(".drink-card")
+    .forEach(function (card) {
+
+
+        card.addEventListener(
+            "click",
+            function (event) {
+
+
+                event.preventDefault();
+
+
+                const targetId =
+                    card.getAttribute("href");
+
+
+                const drink =
+                    document.querySelector(
+                        targetId
+                    );
+
+
+                if (!drink) {
+
                     return;
-                }
-
-
-                if (event.key === "ArrowRight") {
-
-                    currentIndex =
-                        getCurrentIndex();
-
-                    nextImage();
 
                 }
 
 
-                if (event.key === "ArrowLeft") {
-
-                    currentIndex =
-                        getCurrentIndex();
-
-                    previousImage();
-
-                }
+                drink.classList.add("active");
 
 
-                if (event.key === "Escape") {
-
-                    window.location.hash =
-                        "galeria";
-
-                }
+                document.body.classList.add(
+                    "gallery-open"
+                );
 
             }
         );
 
     });
 
+
+
+/* CERRAR TRAGOS */
+
+drinkLightboxes.forEach(function (box) {
+
+
+    const close =
+        box.querySelector(".close");
+
+
+    const background =
+        box.querySelector(
+            ".lightbox-background"
+        );
+
+
+
+    if (close) {
+
+        close.addEventListener(
+            "click",
+            function (event) {
+
+                event.preventDefault();
+
+                event.stopPropagation();
+
+                closeDrink(box);
+
+            }
+        );
+
+    }
+
+
+
+    if (background) {
+
+        background.addEventListener(
+            "click",
+            function (event) {
+
+                event.preventDefault();
+
+                closeDrink(box);
+
+            }
+        );
+
+    }
+
+});
+
+
+
+/* FUNCIÓN CERRAR TRAGO */
+
+function closeDrink(box) {
+
+    box.classList.remove("active");
+
+    document.body.classList.remove(
+        "gallery-open"
+    );
+
+}
+
+
+
+/* EVITA CERRAR AL TOCAR LA IMAGEN */
+
+document
+    .querySelectorAll(
+        ".drink-content, .lightbox-content"
+    )
+    .forEach(function (content) {
+
+
+        content.addEventListener(
+            "click",
+            function (event) {
+
+                event.stopPropagation();
+
+            }
+        );
+
+    });
+
+
 </script>
+
 
 </body>
 
 </html>
-
 
 
 
