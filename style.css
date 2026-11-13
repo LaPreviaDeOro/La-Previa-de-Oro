@@ -1,3 +1,4 @@
+
 /* ==========================================
    LA PREVIA DE ORO
    Fiesta nocturna · Negro y dorado
@@ -17,6 +18,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 85px;
+    scrollbar-gutter: stable;
 }
 
 :root {
@@ -70,6 +72,8 @@ body::after {
     bottom: 10%;
     animation-delay: 3s;
 }
+
+/* Bloqueo del desplazamiento al abrir imágenes */
 
 body.gallery-open {
     overflow: hidden;
@@ -795,14 +799,28 @@ section {
     position: fixed;
     inset: 0;
     z-index: 9999;
+
+    width: 100%;
+    height: 100%;
+    height: 100dvh;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     padding: 25px;
+
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+
+    overflow: hidden;
+    overscroll-behavior: contain;
+
+    background: rgba(0,0,0,.96);
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
     transition:
         opacity .25s ease,
         visibility .25s ease;
@@ -826,11 +844,14 @@ section {
 .drink-content {
     position: relative;
     z-index: 2;
+
     max-width: 90vw;
     max-height: 90vh;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     animation: imagenEntrada .3s ease both;
 }
 
@@ -839,14 +860,20 @@ section {
     display: block;
     max-width: 90vw;
     max-height: 85vh;
+    max-height: 85dvh;
+
     width: auto;
     height: auto;
+
     object-fit: contain;
+
     border: 1px solid var(--gold);
     border-radius: 8px;
+
     box-shadow:
         0 0 30px rgba(220,165,47,.3),
         0 0 80px rgba(220,165,47,.12);
+
     user-select: none;
     -webkit-user-select: none;
     -webkit-user-drag: none;
@@ -862,11 +889,14 @@ section {
     top: -45px;
     right: 0;
     z-index: 30;
+
     color: #fff;
     background: transparent;
     border: none;
+
     font-size: 34px;
     line-height: 1;
+
     cursor: pointer;
     transition: .2s ease;
 }
@@ -887,20 +917,28 @@ section {
     top: 50%;
     transform: translateY(-50%);
     z-index: 20;
+
     width: 52px;
     height: 52px;
+
     border-radius: 50%;
     border: 1px solid rgba(220,165,47,.6);
+
     background: rgba(0,0,0,.8);
     color: var(--gold2);
+
     font-size: 38px;
     line-height: 1;
+
     cursor: pointer;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     backdrop-filter: blur(8px);
     box-shadow: 0 0 15px rgba(220,165,47,.18);
+
     transition: .25s ease;
 }
 
@@ -972,17 +1010,23 @@ section {
     position: fixed;
     right: 20px;
     bottom: 20px;
+
     width: 45px;
     height: 45px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     background: linear-gradient(135deg, #f4c85c, #dca52f);
     color: #050505;
+
     border: 1px solid rgba(255,255,255,.2);
     border-radius: 50%;
+
     font-weight: 900;
     z-index: 900;
+
     box-shadow: 0 0 18px rgba(220,165,47,.3);
     transition: transform .3s ease, box-shadow .3s ease;
 }
@@ -1145,12 +1189,16 @@ footer strong {
         top: 72px;
         left: 0;
         right: 0;
+
         display: none;
         flex-direction: column;
+
         padding: 25px;
+
         background: rgba(5,5,5,.98);
         border-top: 1px solid rgba(220,165,47,.2);
         border-bottom: 1px solid rgba(220,165,47,.2);
+
         box-shadow: 0 15px 25px rgba(0,0,0,.5);
     }
 
@@ -1191,6 +1239,7 @@ footer strong {
 
     .hero {
         min-height: 78vh;
+        min-height: 78svh;
         padding: 50px 20px;
     }
 
@@ -1213,10 +1262,17 @@ footer strong {
         padding: 15px;
     }
 
+    .lightbox-content,
+    .drink-content {
+        max-width: 100%;
+        max-height: 85dvh;
+    }
+
     .lightbox-content img,
     .drink-content img {
         max-width: 95vw;
         max-height: 80vh;
+        max-height: 80dvh;
     }
 
     .gallery-prev,
@@ -1290,6 +1346,29 @@ footer strong {
     .section-title {
         margin-bottom: 35px;
     }
+
+    .section-title h2 {
+        font-size: 42px;
+    }
+
+    .section-title p {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .btn {
+        padding: 0 22px;
+        font-size: 13px;
+    }
 }
 
 
@@ -1310,5 +1389,3 @@ footer strong {
     }
 
 }
-
-
