@@ -157,143 +157,113 @@
         </div>
 
 
-        <!-- =========================
-             TRAGOS CLÁSICOS
-        ========================= -->
+       
+<!-- =========================
+     TRAGOS CLÁSICOS
+========================= -->
 
-        <div class="menu-category">
+<div class="menu-category">
 
-            <h3 class="category-title">
-                Tragos clásicos
-            </h3>
+    <h3 class="category-title">
+        Tragos clásicos
+    </h3>
 
+    <div class="grid">
 
-            <div class="grid">
+        <!-- GANCIA -->
+        <div class="card drink-card">
 
+            <div class="card-info">
+                <h3>Gancia c/Sprite</h3>
 
-                <!-- GANCIA -->
+                <p class="description">
+                    Gancia acompañado con Sprite.
+                </p>
 
-                <a href="#carta"
-                   class="card drink-card">
-
-                    <div class="card-info">
-
-                        <h3>
-                            Gancia c/Sprite
-                        </h3>
-
-                        <p class="description">
-                            Gancia acompañado con Sprite.
-                        </p>
-
-                        <div class="price">
-                            $10.000
-                        </div>
-
-                    </div>
-
-                </a>
-
-
-                <!-- VODKA -->
-
-                <a href="#carta"
-                   class="card drink-card">
-
-                    <div class="card-info">
-
-                        <h3>
-                            Vodka Clásico c/Sprite
-                        </h3>
-
-                        <p class="description">
-                            Vodka clásico acompañado con Sprite.
-                        </p>
-
-                        <div class="price">
-                            $10.000
-                        </div>
-
-                    </div>
-
-                </a>
-
-
-                <!-- FERNET CON COCA -->
-
-                <a href="#carta"
-                   class="card drink-card">
-
-                    <div class="card-info">
-
-                        <h3>
-                            Fernet c/Coca
-                        </h3>
-
-                        <p class="description">
-                            Fernet combinado con Coca-Cola.
-                        </p>
-
-                        <div class="price">
-                            $10.000
-                        </div>
-
-                    </div>
-
-                </a>
-
-
-                <!-- CAMPARI CON JUGO DE NARANJA -->
-
-                <a href="#carta"
-                   class="card drink-card">
-
-                    <div class="card-info">
-
-                        <h3>
-                            Campari c/jugo de naranja
-                        </h3>
-
-                        <p class="description">
-                            Campari acompañado con jugo de naranja.
-                        </p>
-
-                        <div class="price">
-                            $10.000
-                        </div>
-
-                    </div>
-
-                </a>
-
-
-                <!-- GIN TONIC -->
-
-                <a href="#carta"
-                   class="card drink-card">
-
-                    <div class="card-info">
-
-                        <h3>
-                            Gin Tonic
-                        </h3>
-
-                        <p class="description">
-                            Gin tonic a elección: frutos rojos, limón o naranja.
-                        </p>
-
-                        <div class="price">
-                            $10.000
-                        </div>
-
-                    </div>
-
-                </a>
-
-
+                <div class="price">
+                    $10.000
+                </div>
             </div>
 
         </div>
+
+
+        <!-- VODKA -->
+        <div class="card drink-card">
+
+            <div class="card-info">
+                <h3>Vodka Clásico c/Sprite</h3>
+
+                <p class="description">
+                    Vodka clásico acompañado con Sprite.
+                </p>
+
+                <div class="price">
+                    $10.000
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- FERNET -->
+        <div class="card drink-card">
+
+            <div class="card-info">
+                <h3>Fernet c/Coca</h3>
+
+                <p class="description">
+                    Fernet combinado con Coca-Cola.
+                </p>
+
+                <div class="price">
+                    $10.000
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- CAMPARI -->
+        <div class="card drink-card">
+
+            <div class="card-info">
+                <h3>Campari c/jugo de naranja</h3>
+
+                <p class="description">
+                    Campari acompañado con jugo de naranja.
+                </p>
+
+                <div class="price">
+                    $10.000
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- GIN TONIC -->
+        <div class="card drink-card">
+
+            <div class="card-info">
+                <h3>Gin Tonic</h3>
+
+                <p class="description">
+                    Gin tonic a elección: frutos rojos,
+                    limón o naranja.
+                </p>
+
+                <div class="price">
+                    $10.000
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
 
 
         <!-- =========================
@@ -2025,56 +1995,36 @@
      JAVASCRIPT
 ========================= -->
 
-<script>
 
+<script>
 
 /* =========================
    MENÚ MOBILE
 ========================= */
 
-const menuToggle =
-    document.getElementById("menuToggle");
-
-const menu =
-    document.getElementById("menu");
-
+const menuToggle = document.getElementById("menuToggle");
+const menu = document.getElementById("menu");
 
 menuToggle.addEventListener("click", function () {
-
     menu.classList.toggle("active");
-
 });
 
-
-document
-    .querySelectorAll("#menu a")
-    .forEach(function (link) {
-
-        link.addEventListener("click", function () {
-
-            menu.classList.remove("active");
-
-        });
-
+document.querySelectorAll("#menu a").forEach(function (link) {
+    link.addEventListener("click", function () {
+        menu.classList.remove("active");
     });
-
+});
 
 
 /* =========================
    GALERÍA
 ========================= */
 
-const galleryLinks =
-    document.querySelectorAll(".photo");
-
-const galleryLightboxes =
-    document.querySelectorAll(".lightbox");
-
+const galleryLinks = document.querySelectorAll(".photo");
+const galleryLightboxes = document.querySelectorAll(".lightbox");
 
 let currentImage = 0;
-
 let savedScrollPosition = 0;
-
 
 
 /* ABRIR GALERÍA */
@@ -2086,7 +2036,6 @@ galleryLinks.forEach(function (link, index) {
         event.preventDefault();
 
         savedScrollPosition = window.scrollY;
-
         currentImage = index;
 
         openGallery(currentImage);
@@ -2096,27 +2045,21 @@ galleryLinks.forEach(function (link, index) {
 });
 
 
-
 function openGallery(index) {
 
     galleryLightboxes.forEach(function (box) {
-
         box.classList.remove("active");
-
     });
-
 
     currentImage = index;
 
-
-    galleryLightboxes[currentImage]
-        .classList.add("active");
-
+    if (galleryLightboxes[currentImage]) {
+        galleryLightboxes[currentImage].classList.add("active");
+    }
 
     document.body.classList.add("gallery-open");
 
 }
-
 
 
 /* CERRAR GALERÍA */
@@ -2124,42 +2067,28 @@ function openGallery(index) {
 function closeGallery() {
 
     galleryLightboxes.forEach(function (box) {
-
         box.classList.remove("active");
-
     });
-
 
     document.body.classList.remove("gallery-open");
 
-
-    /*
-       Volvemos exactamente a la posición
-       donde estaba el usuario.
-    */
-
-    window.scrollTo(
-        0,
-        savedScrollPosition
-    );
+    window.scrollTo({
+        top: savedScrollPosition,
+        left: 0,
+        behavior: "instant"
+    });
 
 }
 
 
-
-/* SIGUIENTE */
+/* SIGUIENTE IMAGEN */
 
 function nextImage() {
 
     currentImage++;
 
-    if (
-        currentImage >=
-        galleryLightboxes.length
-    ) {
-
+    if (currentImage >= galleryLightboxes.length) {
         currentImage = 0;
-
     }
 
     showImage(currentImage);
@@ -2167,24 +2096,19 @@ function nextImage() {
 }
 
 
-
-/* ANTERIOR */
+/* IMAGEN ANTERIOR */
 
 function previousImage() {
 
     currentImage--;
 
     if (currentImage < 0) {
-
-        currentImage =
-            galleryLightboxes.length - 1;
-
+        currentImage = galleryLightboxes.length - 1;
     }
 
     showImage(currentImage);
 
 }
-
 
 
 /* MOSTRAR IMAGEN */
@@ -2192,20 +2116,16 @@ function previousImage() {
 function showImage(index) {
 
     galleryLightboxes.forEach(function (box) {
-
         box.classList.remove("active");
-
     });
-
 
     currentImage = index;
 
-
-    galleryLightboxes[currentImage]
-        .classList.add("active");
+    if (galleryLightboxes[currentImage]) {
+        galleryLightboxes[currentImage].classList.add("active");
+    }
 
 }
-
 
 
 /* =========================
@@ -2214,69 +2134,32 @@ function showImage(index) {
 
 galleryLightboxes.forEach(function (box) {
 
-
-    const prev =
-        document.createElement("button");
-
+    const prev = document.createElement("button");
     prev.className = "gallery-prev";
-
     prev.innerHTML = "‹";
+    prev.setAttribute("aria-label", "Imagen anterior");
 
-    prev.setAttribute(
-        "aria-label",
-        "Imagen anterior"
-    );
-
-
-    const next =
-        document.createElement("button");
-
+    const next = document.createElement("button");
     next.className = "gallery-next";
-
     next.innerHTML = "›";
-
-    next.setAttribute(
-        "aria-label",
-        "Imagen siguiente"
-    );
-
+    next.setAttribute("aria-label", "Imagen siguiente");
 
     box.appendChild(prev);
-
     box.appendChild(next);
 
+    prev.addEventListener("click", function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        previousImage();
+    });
 
-
-    prev.addEventListener(
-        "click",
-        function (event) {
-
-            event.preventDefault();
-
-            event.stopPropagation();
-
-            previousImage();
-
-        }
-    );
-
-
-
-    next.addEventListener(
-        "click",
-        function (event) {
-
-            event.preventDefault();
-
-            event.stopPropagation();
-
-            nextImage();
-
-        }
-    );
+    next.addEventListener("click", function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        nextImage();
+    });
 
 });
-
 
 
 /* =========================
@@ -2285,54 +2168,25 @@ galleryLightboxes.forEach(function (box) {
 
 galleryLightboxes.forEach(function (box) {
 
-
-    const close =
-        box.querySelector(".close");
-
-
-    const background =
-        box.querySelector(
-            ".lightbox-background"
-        );
-
-
+    const close = box.querySelector(".close");
+    const background = box.querySelector(".lightbox-background");
 
     if (close) {
-
-        close.addEventListener(
-            "click",
-            function (event) {
-
-                event.preventDefault();
-
-                event.stopPropagation();
-
-                closeGallery();
-
-            }
-        );
-
+        close.addEventListener("click", function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            closeGallery();
+        });
     }
 
-
-
     if (background) {
-
-        background.addEventListener(
-            "click",
-            function (event) {
-
-                event.preventDefault();
-
-                closeGallery();
-
-            }
-        );
-
+        background.addEventListener("click", function (event) {
+            event.preventDefault();
+            closeGallery();
+        });
     }
 
 });
-
 
 
 /* =========================
@@ -2340,328 +2194,183 @@ galleryLightboxes.forEach(function (box) {
 ========================= */
 
 let touchStartX = 0;
-
 let touchStartY = 0;
-
 let touchEndX = 0;
-
 let touchEndY = 0;
-
-
 
 galleryLightboxes.forEach(function (box) {
 
+    box.addEventListener("touchstart", function (event) {
 
-    box.addEventListener(
-        "touchstart",
-        function (event) {
+        touchStartX = event.changedTouches[0].screenX;
+        touchStartY = event.changedTouches[0].screenY;
 
-            touchStartX =
-                event.changedTouches[0].screenX;
-
-            touchStartY =
-                event.changedTouches[0].screenY;
-
-        },
-        { passive: true }
-    );
+    }, { passive: true });
 
 
+    box.addEventListener("touchend", function (event) {
 
-    box.addEventListener(
-        "touchend",
-        function (event) {
+        touchEndX = event.changedTouches[0].screenX;
+        touchEndY = event.changedTouches[0].screenY;
 
-            touchEndX =
-                event.changedTouches[0].screenX;
+        handleSwipe();
 
-            touchEndY =
-                event.changedTouches[0].screenY;
-
-            handleSwipe();
-
-        },
-        { passive: true }
-    );
+    }, { passive: true });
 
 });
 
 
-
 function handleSwipe() {
 
-    const differenceX =
-        touchStartX - touchEndX;
+    const differenceX = touchStartX - touchEndX;
+    const differenceY = touchStartY - touchEndY;
 
-
-    const differenceY =
-        touchStartY - touchEndY;
-
-
-
-    /*
-       Si el movimiento fue más vertical
-       que horizontal, no hacemos nada.
-    */
-
-    if (
-        Math.abs(differenceX) <
-        Math.abs(differenceY)
-    ) {
-
+    if (Math.abs(differenceX) < Math.abs(differenceY)) {
         return;
-
     }
 
-
-
-    /*
-       Evita detectar pequeños movimientos
-       como swipe.
-    */
-
-    if (
-        Math.abs(differenceX) < 50
-    ) {
-
+    if (Math.abs(differenceX) < 50) {
         return;
-
     }
-
-
 
     if (differenceX > 0) {
-
         nextImage();
-
     } else {
-
         previousImage();
-
     }
 
 }
-
 
 
 /* =========================
    TECLADO
 ========================= */
 
-document.addEventListener(
-    "keydown",
-    function (event) {
+document.addEventListener("keydown", function (event) {
 
+    const galleryOpen = document.querySelector(".lightbox.active");
+    const drinkOpen = document.querySelector(".drink-lightbox.active");
 
-        const galleryOpen =
-            document.querySelector(
-                ".lightbox.active"
-            );
+    if (galleryOpen) {
 
-
-        const drinkOpen =
-            document.querySelector(
-                ".drink-lightbox.active"
-            );
-
-
-
-        if (galleryOpen) {
-
-
-            if (
-                event.key === "ArrowRight"
-            ) {
-
-                nextImage();
-
-            }
-
-
-            if (
-                event.key === "ArrowLeft"
-            ) {
-
-                previousImage();
-
-            }
-
-
-            if (
-                event.key === "Escape"
-            ) {
-
-                closeGallery();
-
-            }
-
+        if (event.key === "ArrowRight") {
+            nextImage();
         }
 
+        if (event.key === "ArrowLeft") {
+            previousImage();
+        }
 
-
-        if (
-            drinkOpen &&
-            event.key === "Escape"
-        ) {
-
-            closeDrink(drinkOpen);
-
+        if (event.key === "Escape") {
+            closeGallery();
         }
 
     }
-);
 
+    if (drinkOpen && event.key === "Escape") {
+        closeDrink(drinkOpen);
+    }
+
+});
 
 
 /* =========================
    LIGHTBOX DE TRAGOS
 ========================= */
 
-const drinkLightboxes =
-    document.querySelectorAll(
-        ".drink-lightbox"
-    );
+const drinkLightboxes = document.querySelectorAll(".drink-lightbox");
 
+/*
+   IMPORTANTE:
+   Solo seleccionamos tarjetas que tengan href.
+   Las tarjetas clásicas ahora son div y no
+   generan ningún desplazamiento.
+*/
 
+document.querySelectorAll(".drink-card[href]").forEach(function (card) {
 
-document
-    .querySelectorAll(".drink-card")
-    .forEach(function (card) {
+    card.addEventListener("click", function (event) {
 
+        const targetId = card.getAttribute("href");
+        const drink = targetId ? document.querySelector(targetId) : null;
 
-        card.addEventListener(
-            "click",
-            function (event) {
+        if (!drink || !drink.classList.contains("drink-lightbox")) {
+            return;
+        }
 
+        event.preventDefault();
 
-                event.preventDefault();
-
-
-                const targetId =
-                    card.getAttribute("href");
-
-
-                const drink =
-                    document.querySelector(
-                        targetId
-                    );
-
-
-                if (!drink) {
-
-                    return;
-
-                }
-
-
-                drink.classList.add("active");
-
-
-                document.body.classList.add(
-                    "gallery-open"
-                );
-
-            }
-        );
+        drink.classList.add("active");
+        document.body.classList.add("gallery-open");
 
     });
 
+});
 
 
-/* CERRAR TRAGOS */
+/* =========================
+   CERRAR LIGHTBOX DE TRAGOS
+========================= */
 
 drinkLightboxes.forEach(function (box) {
 
-
-    const close =
-        box.querySelector(".close");
-
-
-    const background =
-        box.querySelector(
-            ".lightbox-background"
-        );
-
-
+    const close = box.querySelector(".close");
+    const background = box.querySelector(".lightbox-background");
 
     if (close) {
 
-        close.addEventListener(
-            "click",
-            function (event) {
+        close.addEventListener("click", function (event) {
 
-                event.preventDefault();
+            event.preventDefault();
+            event.stopPropagation();
 
-                event.stopPropagation();
+            closeDrink(box);
 
-                closeDrink(box);
-
-            }
-        );
+        });
 
     }
 
-
-
     if (background) {
 
-        background.addEventListener(
-            "click",
-            function (event) {
+        background.addEventListener("click", function (event) {
 
-                event.preventDefault();
+            event.preventDefault();
 
-                closeDrink(box);
+            closeDrink(box);
 
-            }
-        );
+        });
 
     }
 
 });
 
 
-
-/* FUNCIÓN CERRAR TRAGO */
+/* =========================
+   FUNCIÓN CERRAR TRAGO
+========================= */
 
 function closeDrink(box) {
 
     box.classList.remove("active");
-
-    document.body.classList.remove(
-        "gallery-open"
-    );
+    document.body.classList.remove("gallery-open");
 
 }
 
 
+/* =========================
+   EVITAR CIERRE AL TOCAR CONTENIDO
+========================= */
 
-/* EVITA CERRAR AL TOCAR LA IMAGEN */
+document.querySelectorAll(".drink-content, .lightbox-content").forEach(function (content) {
 
-document
-    .querySelectorAll(
-        ".drink-content, .lightbox-content"
-    )
-    .forEach(function (content) {
-
-
-        content.addEventListener(
-            "click",
-            function (event) {
-
-                event.stopPropagation();
-
-            }
-        );
-
+    content.addEventListener("click", function (event) {
+        event.stopPropagation();
     });
 
+});
 
 </script>
-
-
 </body>
-
 </html>
 
 
